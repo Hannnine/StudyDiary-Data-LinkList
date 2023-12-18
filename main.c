@@ -28,8 +28,19 @@ int main() {
 		Headinsert(linker, i + 100);
 	}
 
+	printf("table have %d number\n", linker->num);
+	showHeadLinker(linker);
+
 	remove(linker, 103);
 	showHeadLinker(linker);
+
+	insertval(linker, 102, 103);
+	showHeadLinker(linker);
+
+	insertnum(linker, 2, 143);
+	showHeadLinker(linker);
+
+	releasesLink(linker);
 
 	return 0;
 }

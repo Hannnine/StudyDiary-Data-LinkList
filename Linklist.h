@@ -16,11 +16,12 @@ typedef struct {
 
 /*初始化*/
 LinkHead* creatLink();
-void releaseLink(LinkHead* link);
+void releasesLink(LinkHead* link);
 
 /*数据插入：找前直接点*/
 int Headinsert(LinkHead *head, Element val);
-int insert(LinkHead* head, Element val);
+int insertval(LinkHead* head, Element pos, Element val);
+int insertnum(LinkHead* head, Element pos, Element val);
 
 /*数据删除*/
 int remove(LinkHead* head, Element val);
